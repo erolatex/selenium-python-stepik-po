@@ -18,7 +18,6 @@ class TestUserAddToCartFromProductPage(object):
         login_page.open()
         login_page.go_to_login_page()
         login_page.register_new_user(email, password)
-        time.sleep(10)
         login_page.should_be_authorized_user()
 
     @pytest.mark.need_review
